@@ -1,0 +1,14 @@
+body {
+    background-color: cornflowerblue;
+    /* background-image: url("../concert.jpg"); */
+}
+
+h1 {
+    text-align: center;
+    color:crimson;
+}
+
+h2 {
+    text-align: center;
+    color: greenyellow;
+}
