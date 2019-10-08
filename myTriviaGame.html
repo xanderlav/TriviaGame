@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Trivia Game</title>
+    <title>Books Trivia Game</title>
     
 <!-- Including CSS references-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
 
 <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-<body>
-    <h1>My project</h1>
+<div id="container">
+        <div id="start">Trivia Game!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="verifyAnswer('A')"></div>
+                <div class="choice" id="B" onclick="verifyAnswer('B')"></div>
+                <div class="choice" id="C" onclick="verifyAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="advance"></div>
+        </div>
+        <div id="scoreDisplay" style="display: none"></div>
+    </div>
 
-    <div id="showNumber"></div>
-    <button id="startBtn"> Ready? go!</button>
-    <hr>
-
-    <div id="gameZone"></div>
-
-    <div id="gameQuestions"></div>
     <!-- Include my own script file  -->
     <script src="assets/javascript/app.js"></script>
 
